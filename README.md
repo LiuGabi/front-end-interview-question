@@ -6,6 +6,5 @@
 1. [HTML 相关问题](#html-quesition)
 
 #### <a name='html-quesition'>HTML 相关问题</a>
-(1) What does a `doctype` do?
-
-   a. 申明文档类型，就像申明 HTML5 类型用 <!DOCTYPE html>
+##### 1. What does a `doctype` do?
+    a. 申明文档类型，就像申明 HTML5 类型用 <!DOCTYPE html>
