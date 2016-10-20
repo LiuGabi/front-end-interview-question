@@ -72,5 +72,28 @@
     8. web worker api
     9. 新的数据存储
 
-9. Difference between a cookie, sessionStorage and localStorage?
-    
+9. Difference between a `cookie`, `sessionStorage` and `localStorage`?
+    1. `sessionStorage` 和 `localStorage`：
+        * 目前为止的两种 web 存储方式
+        * 区别：
+            * `localStorage` 生命周期是永久的，除非用户清除`localStorage`信息
+            * `sessionStorage` 生命周期是当前窗口或标签，一旦窗口或标签被关闭，那么通过`sessionStorage`存储的数据也将被清空
+            * 不同浏览器无法共享`localStorage`和`sessionStorage`中的信息
+            * 相同浏览器不同页面可共享`localStorage`，但是不能共享`sessionStorage`
+            * `sessionStorage` 和 `localStorage`使用相同的 api
+    2. cookie:
+        * html5 中的 cookie 由基于浏览器的本地存储和会话存储组成，它们有网页本身创建和访问
+    3. html5 web storage = 新客户端数据存储选项的通用总括术语：
+        * Web存储更安全，更快。数据不包括在每个服务器请求中，但仅在被要求时使用。它也可以存储大量的数据，而不影响网站的性能。
+    4. 本地存储 = 持久性并且作用域到域（存储没有到期日期的数据）。目前通常提到两种口味：
+        * 'default' = 将事物存储在名称/值对中
+    5. Web SQL（aka Web数据库）= 使用SQL数据库
+        * 会话存储 = 非持久性并且仅限于当前窗口（存储一个会话的数据）
+        * cookies = 以上所有的老学校方式。存储每个域的名称/值对。
+        
+10. Difference between `<script>`、`<script async>` and `<script defer>`?
+    1. `<script>`定义客户端脚本，如 js
+    2. 如果`async =“async”`：脚本与页面的其余部分异步执行（脚本将在页面继续解析时执行）
+    3. 如果不存在`async`，并且`defer =“defer”`：脚本在页面完成解析时执行
+    4. 如果不存在`async或defer`：在浏览器继续解析页面之前，将立即提取并执行脚本
+    5. 每个异步脚本在完成下载之后和窗口的加载事件之前的第一次机会执行。这意味着异步脚本可能（并且可能）不按它们在页面中出现的顺序执行。另一方面，延迟脚本被保证以它们在页面中发生的顺序被执行。该执行在解析完成后开始，但在文档的DOMContentLoaded事件之前。
