@@ -17,20 +17,60 @@
     3. almost standards mode: 只有少数的怪异实现
     4. quirks mode: 布局模拟 Navigator 4 和 Internet Explorer 5 for Windows 中的非标准行为，这些行为不会破坏 Web 上现有的行为
     
-3. Difference between HTML and XHTML?
-    1. XHTML 代表 Extensible Hyper Text 标记语言
-    2. XHTML 几乎与 HTML 相同
-    3. XHTML 比 HTML 更严格
-    4. XHTML 是 HTML 定义为 XML 应用程序
-    5. 所有主流浏览器都支持 XHTML
-    6. XML 语法比 HTML 更加严格，因此 XML 使得作者更加精准的工作，不得不解决以下问题：
+3. Difference between html and xhtml?
+    1. xhtml 代表 Extensible Hyper Text 标记语言
+    2. xhtml 几乎与 html 相同
+    3. xhtml 比 html 更严格
+    4. xhtml 是 html 定义为 xml 应用程序
+    5. 所有主流浏览器都支持 xhtml
+    6. xml 语法比 html 更加严格，因此 xml 使得作者更加精准的工作，不得不解决以下问题：
         * 所有元素和属性必须以小写形式显示
         * 所有属性值必须加引号
         * 非空元素必须要有一个结束标记
         * 空元素使用空格和尾部斜杠终止
-        * 在严格 XHTML 中，所有行内元素必须包含在块元素当中
-        * HTML 中允许大小写，以及部分没有结束标签的元素，即 HTML 的错误边缘比 XHTML 宽。因此 XHTML 更容易被创作和维护，因为结构清晰，问题语法更容易被发现
+        * 在严格 xhtml 中，所有行内元素必须包含在块元素当中
+        * html 中允许大小写，以及部分没有结束标签的元素，即 html 的错误边缘比 xhtml 宽。因此 xhtml 更容易被创作和维护，因为结构清晰，问题语法更容易被发现
 
-3. Problems with using `application/xhtml+xml`?
-    1.
+4. Problems with using `application/xhtml+xml`?
+    1. `content="application/xhtml+xml"`是 xhtml 文档的一种，可能存在一些老的浏览器不兼容
+    2. 如果你的网页包含无效的代码，浏览器将显示 xml 解析错误，而 text/html 至少显示可见的内容
+
+5. How do you server a page with multiple languages?
+    1. 保证 code 里已经定义了所需要支持的语言
+    2. 拥有已经翻译好的所需要支持语言的文本
+    3. 服务器能够识别浏览器的语言请求
+    4. 命名好翻译文件，方便系统方法定位到这些文件
+    5. 当所需要请求的语言没有时，需要提供一种用通用语言来代替的方法。
+
+6. What to consider when design or developing for multilingual sites?
+    1. 适用所有语言字符的编码（这意味着数据库下的所有内容都应使用 utf 编码）
+    2. 表示用户区域设置的一些方式
+    3. 时间和距离测量等使用当地的
+    4. 相同意思的不同语言的文本长度不一，要考虑此时网页如何布局
+    5. 使用 lang 属性来标记语言的变化，lang 属性可以用于几乎每个 html 属性
+    6. 域名的选择
+    7. 内容的翻译（使用人工翻译，js翻译不利于搜索引擎）
+    8. 访问速度。不同国家之间相互出入口带宽不同，其对应的网站服务器应放在其对应的国家
+
+7. What are `data-*` attributes good for?
+    1. html5 新增属性
+    2. `data-*` 属性允许在标准 html 元素上存储额外信息，没有其他 hack
+    3. 这些自定义数据都可通过属性设置的元素的 `HTMLElement` 接口获取。 `HTMLElement.dataset` 属性提供对它们的访问。
+    4. js 访问这些属性简单
+    5. 注意
+        * 不要存储需要显示和访问的数据，爬虫不能将其编入索引当中
+        * 读取 `data-*` 属性行为相比 js 存储数据会慢
+
+8. 把 html5 看做一个开放的平台，它的构建模块有哪些？
+    1. 更多语义化标记文本
+    2. 新的表单元素
+    3. video 和 audio
+    4. 新的 js api
+    5. canvas 和 svg
+    6. 新的通信 api
+    7. geolacation api
+    8. web worker api
+    9. 新的数据存储
+
+9. Difference between a cookie, sessionStorage and localStorage?
     
