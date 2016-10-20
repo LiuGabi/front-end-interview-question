@@ -8,9 +8,9 @@
 #### <a name='html-quesition'>HTML 相关问题</a>
 
 1. What does a `doctype` do?
-    a. 申明文档类型，例如申明 HTML5 类型用 <!DOCTYPE html>
+    1. 申明文档类型，例如申明 HTML5 类型用 <!DOCTYPE html>
     
-    b. 目的：告诉浏览器解析器用什么类型的标准来解析文档
+    2. 目的：告诉浏览器解析器用什么类型的标准来解析文档
     
 2. Difference between full standards mode, almost standards mode and quirks mode?
     a. Web 浏览器中的布局引擎现在使用三种模式：full standards mode、almost standards mode、quirks mode
