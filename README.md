@@ -1,1 +1,2 @@
-# front-end-interview-question
+# 前端面试问题
+答案仅供参考。另外这些问题更能够检测自己对技能掌握的不足之处。
