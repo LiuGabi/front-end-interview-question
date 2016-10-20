@@ -9,6 +9,7 @@
 
 ##### &nbsp;&nbsp;&nbsp; 1. What does a `doctype` do?
     a. 申明文档类型，例如申明 HTML5 类型用 <!DOCTYPE html>
+    
     b. 目的：告诉浏览器解析器用什么类型的标准来解析文档
     
 ##### &nbsp;&nbsp;&nbsp; 2. Difference between full standards mode, almost standards mode and quirks mode?
