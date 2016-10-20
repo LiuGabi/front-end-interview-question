@@ -4,3 +4,6 @@
 
 ## 目录
 1. [HTML 相关问题](#html-quesition)
+
+### HTML 相关问题
+1. What does a `doctype` do?
