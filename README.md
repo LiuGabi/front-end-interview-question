@@ -184,15 +184,16 @@
         }`
 
 7. Explain CSS sprites, and how you would implement them on a page or site?
-    1. 定义：把网站小图片整合到一张图片里，利用`background-position`把对应的图片显示出来
-    2. 优点：
-        * 减少请求次数
-        * 减少图片的字节数
-    3. 缺点：
-        * 开发繁琐，难以适应高分辨率图片
-    4. 如果只是添加 icon，推荐 font icon
+    1. 定义：把网站小图片整合到一张图片里，利用`background-position`把对应的图片显示出来
+    2. 优点：
+        * 减少请求次数
+        * 减少图片的字节数
+    3. 缺点：
+        * 开发繁琐，难以适应高分辨率图片
+    4. 如果只是添加 icon，推荐 font icon
 
-8. 
+8. 喜欢的图片替代方法是什么？如何选择？
+    1. FIR [Demo](https://codepen.io/LiuGabi/pen/LRryJm)    
 
 
 
