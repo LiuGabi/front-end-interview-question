@@ -177,10 +177,10 @@
         clear: both;
         }`，
         注意：如果不把伪元素的高度设置为0，框内最底部就会多出几行空白像素
-    3. 父级元素设置样式：
-        `#parent {
-            overflow: hidden;
-            zoom: 1;
+    3. 父级元素设置样式：
+        `#parent {
+        overflow: hidden;
+        zoom: 1;
         }`
 
 7. Explain CSS sprites, and how you would implement them on a page or site?
