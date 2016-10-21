@@ -194,14 +194,14 @@
 
 8. 喜欢的图片替代方法是什么？如何选择？
     1. FIR [Demo](https://codepen.io/LiuGabi/pen/LRryJm)
-        * 优点：使用 css 而不是标记语法提供图片，更改图片只需更改 css
-        * 缺点：需要一组不具备任何语义的 span 标签才能运作
-    2. phark [Demo](https://codepen.io/LiuGabi/pen/GjPmza)
+        * 优点：使用 css 而不是标记语法提供图片，更改图片只需更改 css
+        * 缺点：需要一组不具备任何语义的 span 标签才能运作
+    2. phark [Demo](https://codepen.io/LiuGabi/pen/GjPmza)
         * 优点
-            * 不需要额外标签
-            * 不影响屏幕阅读器使用者
-        * 缺点
-            * 关闭浏览器显示图片，同时启用CSS支持时，文字图片均不可显示
+            * 不需要额外标签
+            * 不影响屏幕阅读器使用者
+        * 缺点
+            * 关闭浏览器显示图片，同时启用CSS支持时，文字图片均不可显示
 
 
 
