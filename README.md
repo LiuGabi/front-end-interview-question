@@ -203,7 +203,13 @@
         * 缺点
             * 关闭浏览器显示图片，同时启用CSS支持时，文字图片均不可显示
 
-9. 
+9. How would you approach fixing browser-constrained browser-specific styling issues?
+    1. 通常浏览器兼容性问题比较多的是IE浏览器，具体问题具体分析
+    2. 一般浏览器兼容性问题还可以通过 webkit
+
+10. How do you serve your pages for feature-constrained browsers?
+    * What techniques/processes do you use?
+    1. 
 
 
 
