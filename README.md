@@ -100,14 +100,14 @@
     5. 每个异步脚本在完成下载之后和窗口的加载事件之前的第一次机会执行。这意味着异步脚本可能（并且可能）不按它们在页面中出现的顺序执行。另一方面，延迟脚本被保证以它们在页面中发生的顺序被执行。该执行在解析完成后开始，但在文档的DOMContentLoaded事件之前。
     
 11. 为什么通常推荐将 css `<link>`放置在 `<head></head>`之间，而将 js 放置在 `<script>`放置在`</body>`之前？你知道有哪些例子吗？
-    1. `<link>`标签只能出现在`<head>`元素当中
-    2. 浏览器从上到下依次解析 html 文档，将 `css` 放在头部可以先加载，避免加载 `body` 内容时导致页面一开始样式错乱，然后闪烁。
+    1. `<link>`标签只能出现在`<head>`元素当中
+    2. 浏览器从上到下依次解析 html 文档，将 `css` 放在头部可以先加载，避免加载 `body` 内容时导致页面一开始样式错乱，然后闪烁。
     3. 若将 javascript 文件放到 head 里面，就意味着必须等到所有的 `javascript` 代码都被下载、解析和执行完成 之后才开始呈现页面内容。这样就会造成呈现页面时出现明显的延迟，窗口一片空白。为避免这样的问题一般将全部 `javascript` 文件放到 `body` 元素中页面内容的后面。
     
 12. 什么是渐进式渲染 (progressive rendering)？
-    1. 图片加载分为两种方式：（1）线性加载；（2） 交错/渐进式加载
-    2. 线性加载：自上而下扫描式
-    3. 交错/渐进式加载：先是全部的模糊图片，然后逐渐清晰
+    1. 图片加载分为两种方式：（1）线性加载；（2） 交错/渐进式加载
+    2. 线性加载：自上而下扫描式
+    3. 交错/渐进式加载：先是全部的模糊图片，然后逐渐清晰
 
 13. Have you used different HTML templating languages before?
     1. ejs
@@ -121,12 +121,12 @@
     3. id 可以起到锚点的作用
 
 2. Difference between `reset.css`and`normallize.css`?
-    1. `reset.css` 重置所有`user agent`样式，同时进行一些 bug 的修复
-    2. `normalize.css` 保留`user agent`样式，修复部分问题样式，比如 `body`默认的`margin`样式
-    3. 个人偏重选择 `normalize.css`
+    1. `reset.css` 重置所有`user agent`样式，同时进行一些 bug 的修复
+    2. `normalize.css` 保留`user agent`样式，修复部分问题样式，比如 `body`默认的`margin`样式
+    3. 个人偏重选择 `normalize.css`
 
 3. `float`工作原理？
-    1. `float` 属性定义元素在哪个方向浮动，使元素脱离普通文档流
+    1. `float` 属性定义元素在哪个方向浮动，使元素脱离普通文档流
     2. 以往这个属性总应用于图像，使文本围绕在图像周围，不过在 CSS 中，任何元素都可以浮动
     3. 浮动元素会生成一个块级框，而不论它本身是何种元素
     4. 如果浮动非替换元素，则要指定一个明确的宽度；否则，它们会尽可能地窄
@@ -140,7 +140,7 @@
 
 4. 描述`z-index`和叠加上下文是如何形成的?
     1. `z-index`属性设置元素的堆叠顺序，数值越大的越靠前
-    2. 注意：`z-index`的值可以是负数，并且只在元素设置定位(比如`position:absolute`或`position:relative`)才生效
+    2. 注意：`z-index`的值可以是负数，并且只在元素设置定位(比如`position:absolute`或`position:relative`)才生效
   
 5. `BFC(Block Formatting Context)` 如何工作？
     1. 
