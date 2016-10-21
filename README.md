@@ -143,8 +143,21 @@
     2. 注意：`z-index`的值可以是负数，并且只在元素设置定位(比如`position:absolute`或`position:relative`)才生效
   
 5. `BFC(Block Formatting Context)` 如何工作？
-    1. 
-    
+    1. BFC 定义：
+        * 从样式上看，具有 BFC 的元素与普通的容器没有什么区别
+        * 从功能上，具有 BFC 的元素可以看作是隔离了的独立容器，容器里面的元素不会在布局上影响到外面的元素
+        * BFC 具有普通容器没有的一些特性，例如可以包含浮动元素，用`overflow`清除浮动的方法就是触发了浮动元素的父元素的 BFC ，使它可以包含浮动元素，从而防止出现高度塌陷的问题。
+        * 简单说，BFC 就是一种属性，这种属性会影响着元素的定位以及与其兄弟元素之间的相互作用
+    2. 触发 BFC 方式：
+        * 浮动元素，float 除 none 以外的值
+        * 绝对定位元素，position（absolute，fixed）
+        * display 为以下其中之一的值 inline-blocks，table-cells，table-captions
+        * overflow 除了 visible 以外的值（hidden，auto，scroll）
+        * "display:table" 本身并不产生 BFC，而是由它产生匿名框，匿名框中包含 "display:table-cell" 的框会产 BFC
+        * 在 CSS3 中，BFC 叫做 Flow Root，并增加了一些触发条件：
+            * display 的 table-caption 值
+            * position 的 fixed 值，其实 fixed 是 absolute 的一个子类，因此在 CSS2.1 中使用这个值也会触发 BFC ，只是在 CSS3 中更加明确了这一点。
+        * 注意：BFC 并不是元素，而是某些元素带有的一些属性，因此，是上面这些元素产生了 BFC ，而它们本身并不是 BFC ，这个概念需要区分清楚
 
 
 
