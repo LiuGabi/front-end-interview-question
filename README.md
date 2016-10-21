@@ -177,13 +177,22 @@
         clear: both;
         }`，
         注意：如果不把伪元素的高度设置为0，框内最底部就会多出几行空白像素
-    3. 父级元素设置样式
+    3. 父级元素设置样式：
         `#parent {
             overflow: hidden;
             zoom: 1;
         }`
 
-7. 
+7. Explain CSS sprites, and how you would implement them on a page or site?
+    1. 定义：把网站小图片整合到一张图片里，利用`background-position`把对应的图片显示出来
+    2. 优点：
+        * 减少请求次数
+        * 减少图片的字节数
+    3. 缺点：
+        * 开发繁琐，难以适应高分辨率图片
+    4. 如果只是添加 icon，推荐 font icon
+
+8. 
 
 
 
