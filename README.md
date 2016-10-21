@@ -164,12 +164,19 @@
         * BFC 可以阻止元素被浮动元素覆盖
   
 6. What are the various clearing techniques and which is appropriate for what context?
-    1. 设置空标签
+    1. 设置空标签：
         `<div class="clear"></div>
         .clear {
         clear: both;
-        }`
-
+        }` 增加无意义的空标签
+    2. 添加`:after`伪元素：
+        `.clearfix:after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+        }`，
+        注意：如果不把伪元素的高度设置为0，框内最底部就会多出几行空白像素
 
 
 
