@@ -4,6 +4,7 @@
 
 ## 目录
 1. [HTML 相关问题](#html-quesition)
+2. [CSS 相关问题](#css-quesition)
 
 #### <a name='html-quesition'>HTML 相关问题</a>
 
@@ -98,5 +99,20 @@
     4. 如果不存在`async或defer`：在浏览器继续解析页面之前，将立即提取并执行脚本
     5. 每个异步脚本在完成下载之后和窗口的加载事件之前的第一次机会执行。这意味着异步脚本可能（并且可能）不按它们在页面中出现的顺序执行。另一方面，延迟脚本被保证以它们在页面中发生的顺序被执行。该执行在解析完成后开始，但在文档的DOMContentLoaded事件之前。
     
-11. 为什么通常推荐将 css `<link>`放置在 `<head></head>`之间，而将 js 放置在 `<script>放置在`</body>`之前？你知道有哪些例子吗？
-    1. `<link>`
+11. 为什么通常推荐将 css `<link>`放置在 `<head></head>`之间，而将 js 放置在 `<script>`放置在`</body>`之前？你知道有哪些例子吗？
+    1. `<link>`标签只能出现在`<head>`元素当中
+    2. 浏览器从上到下依次解析 html 文档，将 `css` 放在头部可以先加载，避免加载 `body` 内容时导致页面一开始样式错乱，然后闪烁。
+    3. 若将 javascript 文件放到 head 里面，就意味着必须等到所有的 `javascript` 代码都被下载、解析和执行完成 之后才开始呈现页面内容。这样就会造成呈现页面时出现明显的延迟，窗口一片空白。为避免这样的问题一般将全部 `javascript` 文件放到 `body` 元素中页面内容的后面。
+    
+12. 什么是渐进式渲染 (progressive rendering)？
+    1. 图片加载分为两种方式：（1）线性加载；（2） 交错/渐进式加载
+    2. 线性加载：自上而下扫描式
+    3. 交错/渐进式加载：先是全部的模糊图片，然后逐渐清晰
+
+13. Have you used different HTML templating languages before?
+    1. ejs
+    2. jade
+    
+#### <a name='css-quesition'>CSS 相关问题</a>
+
+1. difference between classes and IDs in CSS?
