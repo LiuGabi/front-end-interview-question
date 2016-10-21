@@ -207,10 +207,22 @@
     1. 通常浏览器兼容性问题比较多的是IE浏览器，具体问题具体分析
     2. 一般浏览器兼容性问题还可以通过 webkit
 
-10. How do you serve your pages for feature-constrained browsers?
-    * What techniques/processes do you use?
-    1. 
+10. How do you serve your pages for feature-constrained browsers? What techniques/processes do you use?
+    1. 当浏览器的功能受到限制时：
+        * 如果是特殊字体的不支持可能就会采取图片替代方法，诸如此类
+        * css3 查询功能在很多浏览器上不支持时，可能会使用js来代替
+        * 最好的办法是设计师给的设计能避免这个功能
 
+11. The different ways to visually hide content( and make it available only for screen readers )?
+    1. `display: none;`缺点：搜索引擎可能认为是来及信息而被忽略
+    2. `visibility: hidden;` 缺点：隐藏的内容占据物理空间
+    3. `overflow: hidden;` 比较合理的方法，设置宽高为 0
+
+12. Have you ever used a grid system, and if so, what do you prefer?
+    1. 用过 bootstrap，[walmartlabs](http://walmartlabs.github.io/web-style-guide/)
+    2. 自己也曾根据 grid 原理开发了 24 格化和 48 格化 [个人 grid 原理分析文档ppt](http://wenku.baidu.com/view/333dc548ec3a87c24028c4fb)
+    3. 说实话不曾喜欢 grid 布局，个人感觉类名太多
+    
 
 
 
