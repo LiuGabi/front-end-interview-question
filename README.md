@@ -164,11 +164,11 @@
         * BFC 可以阻止元素被浮动元素覆盖
   
 6. What are the various clearing techniques and which is appropriate for what context?
-    a. 设置空标签
-    <div class="clear"></div>
-    .clear {
+    1. 设置空标签
+        `<div class="clear"></div>
+        .clear {
         clear: both;
-    }
+        }`
 
 
 
