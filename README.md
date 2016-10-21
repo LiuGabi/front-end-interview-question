@@ -160,9 +160,9 @@
         * 注意：BFC 并不是元素，而是某些元素带有的一些属性，因此，是上面这些元素产生了 BFC ，而它们本身并不是 BFC ，这个概念需要区分清楚
 
     3. BFC 的属性
-        * BFC 会阻止外边距折叠
-        * BFC 可以包含浮动的元素
-        * BFC 可以阻止元素被浮动元素覆盖
+        * BFC 会阻止外边距折叠
+        * BFC 可以包含浮动的元素
+        * BFC 可以阻止元素被浮动元素覆盖
   
 6. What are the various clearing techniques and which is appropriate for what context?
     a. 设置空标签
