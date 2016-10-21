@@ -116,8 +116,8 @@
 #### <a name='css-quesition'>CSS 相关问题</a>
 
 1. Difference between class and id in css?
-    1. 前缀不同，`#`, `.`
-    2. 一个 `id` 一个页面只能用一次；class 可以多次引用
+    1. 前缀不同，`#`, `.`
+    2. 一个 `id` 一个页面只能用一次；class 可以多次引用
     3. id 可以起到锚点的作用
 
 2. Difference between `reset.css`and`normallize.css`?
