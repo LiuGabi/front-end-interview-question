@@ -115,4 +115,79 @@
     
 #### <a name='css-quesition'>CSS 相关问题</a>
 
-1. difference between classes and IDs in CSS?
+1. Difference between class and id in css?
+    1. 前缀不同，`#`, `.`
+    2. 一个 `id` 一个页面只能用一次；class 可以多次引用
+    3. id 可以起到锚点的作用
+
+2. Difference between `reset.css`and`normallize.css`?
+    1. `reset.css` 重置所有`user agent`样式，同时进行一些 bug 的修复
+    2. `normalize.css` 保留`user agent`样式，修复部分问题样式，比如 `body`默认的`margin`样式
+    3. 个人偏重选择 `normalize.css`
+
+3. `float`工作原理？
+    1. `float` 属性定义元素在哪个方向浮动，使元素脱离普通文档流
+    2. 以往这个属性总应用于图像，使文本围绕在图像周围，不过在 CSS 中，任何元素都可以浮动
+    3. 浮动元素会生成一个块级框，而不论它本身是何种元素
+    4. 如果浮动非替换元素，则要指定一个明确的宽度；否则，它们会尽可能地窄
+    5. 注释：假如在一行之上只有极少的空间可供浮动元素，那么这个元素会跳至下一行，这个过程会持续到某一行拥有足够的空间为止
+    6. `.clearfix:after {
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+        }`
+
+4. 描述`z-index`和叠加上下文是如何形成的?
+    1. `z-index`属性设置元素的堆叠顺序，数值越大的越靠前
+    2. 注意：`z-index`的值可以是负数，并且只在元素设置定位(比如`position:absolute`或`position:relative`)才生效
+  
+5. `BFC(Block Formatting Context)` 如何工作？
+    1. 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
