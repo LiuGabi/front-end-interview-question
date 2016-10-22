@@ -5,6 +5,7 @@
 ## 目录
 1. [HTML 相关问题](#html-quesition)
 2. [CSS 相关问题](#css-quesition)
+3. [Js 相关问题](css-quesition)
 
 #### <a name='html-quesition'>HTML 相关问题</a>
 
@@ -288,7 +289,55 @@
     2. `body.ready #wrapper > .lol233`
     3. 先把所有 class 中有 lol233 的元素拿出来组成一个集合，然后上一层，对每一个集合中的元素，如果元素的 parent id 不为 #wrapper 则把元素从集合中删去。 再向上，从这个元素的父元素开始向上找，没有找到一个 tagName 为 body 且 class 中有 ready 的元素，就把原来的元素从集合中删去
 
+20. 描述伪元素 (pseudo-elements) 及其用途?
+    1. css 伪元素用于向某些选择器设置特殊效果
+    2. :first-letter、:first-line、:before、:after
 
+21. 请解释你对盒模型的理解，以及如何在 CSS 中告诉浏览器使用不同的盒模型来渲染你的布局?
+    1. W3C盒子模型——属性高（height）和属性宽（width）这两个值不包含 填充（padding）和边框（border）
+    2. IE盒子模型——属性高（height）和属性宽（width）这两个值包含 填充（padding）和边框（border）
+    
+22. 请解释 * { box-sizing: border-box; } 的作用, 并且说明使用它有什么好处？
+    1. 使所有元素包含padding值在width中
+    2. 设置元素宽100%时不用考虑因padding而溢出
+
+23. List as many values for the display property that you can remember?
+    1. display: none | block | inline | inline-block | flex | table
+    
+24. Difference between inline and inline-block?
+    1. `inline` 行内元素，不能设置宽度
+    2. `inline-block` 行内块级元素，可以设置宽度，`inline-block` 与 `inline-block` 之间会有默认空白间隙
+
+25. Difference between relative、fixed、absolute and static?
+    1. `relative` 相对定位
+    2. `fixed` 相对窗口，受 `transform` 影响
+    3. `absolute` 相对 `relative` 定位元素
+    4.`static`默认值
+
+26. CSS 中字母 'C' 的意思是叠层 (Cascading)。请问在确定样式的过程中优先级是如何决定的 (请举例)？如何有效使用此系统？
+
+27. 你在开发或生产环境中使用过哪些 CSS 框架？你觉得应该如何改善他们？
+    1. bootstrap
+    2. 类名太多
+
+28. 请问你有尝试过 CSS Flexbox 或者 Grid 标准规格吗？
+    1. [flex 布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+    2. Grid
+
+29. 为什么响应式设计 (responsive design) 和自适应设计 (adaptive design) 不同？
+    1. 响应式设计对设计本身要求高，前端开发人员只需要通过改变css就能对其实现
+    2. 自适应设计包括响应式，有时需要结合 js 来改变内容
+
+30. 你有兼容 retina 屏幕的经历吗？如果有，在什么地方使用了何种技术？
+    1. 当使用图片作为 Icon 时，高 `devicePixelRatio` 情况需要大几倍的图片代替，并用 media 检测 `devicePixelRatio`
+    2. font icon 不需要考虑retina问题
+    3. 高清 `<img>`时，使用 `srcset`
+
+31. 请问为何要使用 translate() 而非 absolute positioning，或反之的理由？为什么？
+    1. translate() 更自然
+    2. 具体情况具体分析
+    
+#### <a name='css-quesition'>Js 相关问题</a>
 
 
 
