@@ -220,10 +220,29 @@
 
 12. Have you ever used a grid system, and if so, what do you prefer?
     1. 用过 bootstrap，[walmartlabs](http://walmartlabs.github.io/web-style-guide/)
-    2. 自己也曾根据 grid 原理开发了 24 格化和 48 格化 [个人 grid 原理分析文档ppt](http://wenku.baidu.com/view/333dc548ec3a87c24028c4fb)
-    3. 说实话不曾喜欢 grid 布局，个人感觉类名太多
-    
+    2. 自己也曾根据 grid 原理开发了 24 格化和 48 格化 [个人 grid 原理分析文档](http://wenku.baidu.com/view/333dc548ec3a87c24028c4fb)
+    3. 说实话不曾喜欢 grid 布局，个人感觉类名太多，但其原理值得学习和探究
 
+13. Have you ever used or implemented media queries or mobile specific layouts/css?
+    1. 媒体类型(media type)
+        * all: 适用于所有的设备
+        * print: 文本和页面在屏幕上市打印模式
+        * screen: 彩色显示器
+        * speech: 语音合成器
+    2. 媒体特性(media feature)
+        * width： viewport width
+        * height: viewport height
+        * aspect-ratio: viewport的宽高比如：16/9
+        * orientation: 宽度和高度的大小关系。。
+        * resolution: pixel density of the output device
+        * scan: scanning process of the output device
+        * grid: is the device a grid or bitmap
+        * color: number of bits per color component of the output device, or zero if the device isn't color
+        * color-index: number of entries in the output device's color lookup table, or zero if the device does not use such a table
+    3. pc 优先
+        * `max-width`
+    4. mobile 优先
+        * `min-width`
 
 
 
