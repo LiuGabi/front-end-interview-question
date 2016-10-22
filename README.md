@@ -233,7 +233,7 @@
         * width： viewport width
         * height: viewport height
         * aspect-ratio: viewport的宽高比如：16/9
-        * orientation: 宽度和高度的大小关系。。
+        * orientation: 宽度和高度的大小关系
         * resolution: pixel density of the output device
         * scan: scanning process of the output device
         * grid: is the device a grid or bitmap
@@ -243,10 +243,50 @@
         * `max-width`
     4. mobile 优先
         * `min-width`
+    5. mdedia 逻辑运算符 (and, not, only)
 
+14. Are you familiar with styling svg? svg 和 canvas 的区别？
+    1. [styling 属性](https://www.w3.org/TR/SVG/styling.html)
+    2. svg:
+        * 不依赖分辨率
+        * 支持事件处理器
+        * 最适合带有大型渲染区域的应用程序
+        * 复杂度高会减慢渲染速度（任何过度使用 DOM 的应用都不快）
+        * 不适合游戏应用
+        * xml 格式
 
+          [示例](http://fixate.it/)
+    3. Canvas
+        * 依赖分辨率
+        * 不支持事件处理器
+        * 弱的文本渲染能力
+        * 能够以 .png 或 .jpg 格式保存结果图像
+        * 最适合图像密集型的游戏，其中的许多对象会被频繁重绘
+    
+15. How do you optimize your webpages for print?
+    1. media print
 
+16. 在书写高效的 css 时需要考虑哪些问题？
+    1. 定义类名的语义性
+    2. 类的重复使用性
+    3. 类的组合使用性
+    4. 规范性
+    5. 考虑 css 的模块性和通用性
+    
+17. css 预处理器的优劣？使用过哪些预处理，优劣是什么？
+    1. 预处理器作为工具的出现主要是为了给开发者带来便利
+    2. 预处理让 css 的书写更具有逻辑性，因此更加便利和快捷
+    3. 需要时刻编译，调试不方便，虽然有类似 source map 等工具，但是开发过度依赖第三方插件遇到问题还要去排除是第三方的原因导致
+    4. less 和 sass( scss ), 后者逻辑性强于前者
 
+18. 设计中使用非标准字体如何去实现？
+    1. 图片代替
+    2. Font icon
+
+19. 浏览器如何判断元素是否匹配某个css选择器？
+    1. 从后往前判断。
+    2. `body.ready #wrapper > .lol233`
+    3. 先把所有 class 中有 lol233 的元素拿出来组成一个集合，然后上一层，对每一个集合中的元素，如果元素的 parent id 不为 #wrapper 则把元素从集合中删去。 再向上，从这个元素的父元素开始向上找，没有找到一个 tagName 为 body 且 class 中有 ready 的元素，就把原来的元素从集合中删去
 
 
 
