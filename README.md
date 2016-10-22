@@ -5,7 +5,7 @@
 ## 目录
 1. [HTML 相关问题](#html-quesition)
 2. [CSS 相关问题](#css-quesition)
-3. [Js 相关问题](css-quesition)
+3. [Js 相关问题](#js-quesition)
 
 #### <a name='html-quesition'>HTML 相关问题</a>
 
@@ -337,7 +337,7 @@
     1. translate() 更自然
     2. 具体情况具体分析
     
-#### <a name='css-quesition'>Js 相关问题</a>
+#### <a name='js-quesition'>Js 相关问题</a>
 
 
 
