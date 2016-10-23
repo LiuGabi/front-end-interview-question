@@ -339,7 +339,11 @@
     
 #### <a name='js-quesition'>Js 相关问题</a>
 
-* 请解释事件代理 (event delegation)。
+1. 请解释事件代理 (event delegation)？
+    1. 事件委托允许您避免向特定节点添加事件侦听器; 而是将事件侦听器添加到一个父级。 该事件监听器分析冒泡的事件以找到子元素上的匹配。
+    ```if（e.target && e.target.nodeName ==“LI”）```  
+    
+
 * 请解释 JavaScript 中 `this` 是如何工作的。
 * 请解释原型继承 (prototypal inheritance) 的原理。
 * 你怎么看 AMD vs. CommonJS？
