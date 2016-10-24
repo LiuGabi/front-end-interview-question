@@ -434,9 +434,13 @@
   1. 请问调用栈 (call stack) 和任务队列 (task queue) 的区别是什么？
   
 41. 解释 `function foo() {}` 与 `var foo = function() {}` 用法的区别？
-    1. 匿名函数
+    1. 匿名函数, 编译后变量 fun_name 被提前，但是它的值 fun_body 不会被提前。匿名函数只有在被调用时才被初始化。定义之后才能用。
     ```
-    var foo = function() {}
+    var fun_name = function() { /* fun_body */ }; 
+    ```
+    2. 编译后函数声明和他的赋值都会被提前。即函数声明过程在整个程序执行之前的预处理就完成了，所以只要处于同一个作用域，就可以访问到，即使在定义之前调用它也可以。
+    ```
+    function fun_name() { /* fun_body */ };
     ```
 
 
