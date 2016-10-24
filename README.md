@@ -341,7 +341,9 @@
 
 1. 请解释事件代理 (event delegation)？
     1. 事件代理允许避免向特定节点添加事件侦听器,取而代之的是将事件侦听器添加到一个父级。 该事件监听器分析冒泡的事件以找到子元素的进行匹配。
-    ```if（e.target && e.target.nodeName ==“LI”）```  
+    ```
+    if（e.target && e.target.nodeName ==“LI”）
+    ```  
     
 2. 请解释 JavaScript 中 `this` 是如何工作的？
     1. `this` 永远指向函数运行时所在的对象
@@ -432,7 +434,10 @@
   1. 请问调用栈 (call stack) 和任务队列 (task queue) 的区别是什么？
   
 41. 解释 `function foo() {}` 与 `var foo = function() {}` 用法的区别？
-    1. 
+    1. 匿名函数
+    ```
+    var foo = function() {}
+    ```
 
 
 
